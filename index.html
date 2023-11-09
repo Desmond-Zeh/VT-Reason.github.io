@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang ="en-UK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+            content="width=device-width">
+<meta name="author"
+         content="Desmond Zeh">
+<meta name ="Description"
+             content="Short circuiting the secondary terminals of a VT is a terrible idea. This content is all about why we shouldn't short the secondary terminals of VT.">
+<title>Voltage transformers</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=Lisu+Bosa:ital@1&family=Old+Standard+TT:ital@1&display=swap"
+	rel="stylesheet">
+<link href="style.css" 
+	rel="stylesheet" >
+</head>
+<body>
+<header>
+	<h1>
+	<strong>Reason why the secondary terminals of a VT shouldn't be short circuited</strong>
+</h1>
+</header>
+<!--My main navigation items-->
+	<nav>
+		<ul>
+			<li id="home"><a href="#">Home</a></li>
+                         <li id = "down"><a href="#">Downloads</a></li>
+			<li id = "about"><a href="#">About</a></li>
+			<li id = "project"><a href="#">Project</a></li>
+			<li id="myDoc"><a href="#">Documents</a></li>
+		</ul>
+	<form>
+		<input type="search" name='q' placeholder="search query">
+		<input type="submit" value="Valid">
+	</form>
+	</nav>
+	<!--This is my main program-->
+	<main>
+		<article>
+<dl>
+<dt>Voltage transformer</dt>
+<dd>Onlike a current trasnformer, a voltage transformer  is a voltage step down, current step up device used  to scale down larger values of voltages into smaller values that can be handled by protective relays, and energy meters.</dd>
+</dt>
+</dl>
+<p> A voltage transformer under normal working conditions will produce a varying line voltage of about 100V-to-110V  and a very low current across its secondary winding due to a very high secondary winding and load impedance, as voltage is present across its primary winding. This means that a voltage transformer rated <strong>380V/√3/110/√3V</strong> will produce a line voltage of about 110V-50Hz when the line voltage presents across its primary winding is about 380V-50Hz. This 110V voltage  will only be measured if the secondary terminals of the VT are not shorted. Assuming the secondary terminals of the VT were shorted, then no voltage will be measured due to a very low winding impedance, and this will lead to a very high current through the shorted terminals. This current is extremely dangerious to the life of personels working in the vicinity of the said VT. This point will even be more clearer if we look at the example below:</p>
+<p> Consider a VT rated <strong>400/√3/100/√3V</strong> installed and connected in parallel with the current carrying conductor of a three phase load operating at 380V-50Hz. The voltage across the secondary terminals (S1 and S2) of the VT is measured using a voltmeter with an internal resistance of 3GΩ. The secondary turns of the VT is 5 while its primary current is 15A. Calculate the total current flowing through the voltmeter under normal working conditions, when the line voltage of the load is 380V-50Hz. Also calculate the short circuit current flowing through the  secondary terminals of the voltage transformer under abnormal conditions. When the load is operating at 380V-50HZ, but with the voltmeter shorted. Consider that the VT is having a transformation ratio of 1:4</p>
+<ol>
+<li>Under normal working conditions</br>
+First,let's determine the voltage across the secondary terminals of the VT when the voltage applied to its primary winding is 380V-50Hz.</br>
+With a transformation ratio (m) of 1:4, we can duduce the secondary voltage as:</br>
+<srtong>U<sub>s</sub> = U<sub>p</sub>  x m</strong></br>
+U<sub>s</sub> = 380x0.25</br>
+<strong>U<sub>s</sub> =  95V</strong></br>
+Now, we determine the current flowing through the voltmeter knowing that current is expressed as;</br>
+</strong>I<sub>r</sub> = U<sub>s</sub>/R<sub>s</sub></strong></br>
+I<sub>r</sub> = 95/3X10<sup>9</sup></br>
+<strong>I<sub>r</sub> = 31.67nA</strong></br>
+Since the voltmeter is connected in parrallel with the VT with its internal resistance connected in series with the secondary winding, this means that they share the same line current.</br>
+ <strong>I<sub>s</sub> = 31.67nA </strong></li>
+<li>Under abnormal condition.</br>
+First, let's calculate the primary turns of the VT knowing that this turn is constant irrespective of the voltage transformer's voltages.</br>
+Under normal condition;</br>
+Primary line voltage (U<sub>p</sub>) = 380V</br>
+Secondary line voltage (U<sub>s</sub>) = 100V</br>
+Primary line current (I<sub>p</sub>) = 15A</br>
+Secondary turns (N<sub>s</sub>) = 5</br>
+Primary turns (N<sub<p</sub>) = N<sub>s</sub>x m</br>
+N<sub<p</sub> = 5x4</br>
+<strong>N<sub<p</sub> = 20</strong></br>
+From the transformer transformation ratio formula, which states that;</br>
+<strong>U<sub>s</sub>/U<sub>p</sub> =  N<sub>s</sub>/N<sub>p</sub> = I<sub>p</sub>/I<sub>s</sub></strong>,</br>
+and with the secondary terminal voltage equal to zero as the result of shorted terminals, we can deduce the secondary short circuit current as  (<strong>I<sub>sc</sub></strong>) as;</br>
+<strong>I<sub>sc</sub> = I<sub>p</sub>(N<sub>p</sub>/N<sub>s</sub>)</strong></br>
+ I<sub>sc</sub> = 15 (20/5)</br>
+<strong>I<sub>sc</sub> = 60A</strong></br>
+</li>
+</ol>
+<p><strong>Conclusion</strong></p>
+<p> From the above example, it is clear that the short circuit current of a voltage transformer is extremely fatal, while its load current is relatively very small with respect to the load connected to the VT. For this reason, it is worth mentioning that the secondary terminals of a voltage transformer should never be short circuited, to avoid dangerious high current as explained above.</p>
+
+</article>
+</main>
+
+<script src="main.js" differ></script>
+<!---My google translator code-->
+  <div id="google_translate_element"></div>
+	
+	<script type="text/javascript" >
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement(
+				{pageLanguage: 'en'},
+				'google_translate_element'
+			);
+		}
+	</script>
+	
+	<script type="text/javascript" src=
+"https://translate.google.com/translate_a/element.js?
+		cb=googleTranslateElementInit">
+	</script>
+	
+	<!--My main footer item-->
+	<footer>
+		<p>Don't <strong>judge</strong> each day by the <strong>harvest</strong> that you made, but by the <strong>seeds</strong> that you <strong>sold</strong>.</p>
+	</footer>
+</body>
+</html>
